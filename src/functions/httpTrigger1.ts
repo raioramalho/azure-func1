@@ -9,6 +9,7 @@ export async function httpTrigger1(request: HttpRequest, context: InvocationCont
     return { body: JSON.stringify(produtos) };
 };
 
+
 app.http('httpTrigger1', {
     methods: ['GET', 'POST'],
     authLevel: 'anonymous',
